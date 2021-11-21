@@ -1,0 +1,118 @@
+.catalog {
+    background-color: #ededed;
+    cursor: default;
+    @include section-border;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 10px 0 20px;
+    }
+}
+
+.offer {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    opacity: 1 !important;
+    text-shadow: rgb(10, 35, 81) 0 0 1px;
+    box-shadow: 0 0 15px black;
+    &__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 12px 0;
+        min-height: 205px;
+        width: 30%;
+        background-color: #fff;
+        border-right: 1px solid black;
+    }
+    &__title {
+        text-align: center;
+        font-family: 'Roboto Regular';
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    &__logo,
+    &__info {
+        display: flex;
+        justify-content: center;
+    }
+    &__info {
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Roboto Light';
+        font-size: 12px;
+    }
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 70%;
+        padding: 15px 10px;
+        //background-color: rgb(231, 246, 248); first
+        background-color: rgba(255, 255, 255, .6);
+        margin: 0 auto;
+        will-change: opacity;
+    }
+    &__term {
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+        font-family: 'Roboto Medium';
+        color: $main-blue;
+        //color: #4d4d63;
+        text-align: center;
+    }
+    &__term-small {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        //color: $main-blue;
+        //color: #6c757d;
+        font-family: 'Roboto Regular';
+        font-size: 14px;
+        & .title {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        & .offer__term-index {
+            text-decoration: underline;
+        }
+    }
+    /* &__term-index {
+        width: 30%;
+        &:nth-child(2) {
+            width: 40%;
+        }
+    } */
+    &__devider {
+        margin-top: 5px;
+        width: 100%;
+    }
+}
+.offer-hide {
+    display: none;
+}
+
+.star,
+.star_gold {
+    color: gold;
+}
+
+.offer-wrapper {
+    padding: 0 20px;
+}
+
+.btn-wrapper {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 50px;
+    transition: all 0.5s;
+}

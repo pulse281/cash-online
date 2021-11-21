@@ -1,0 +1,29 @@
+header {
+    position: absolute;
+}
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Medium';
+    background-color: #ededed;
+    & .text__link-home {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: 50px;
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        background-color: #0a2351;
+        border: 1px solid #000;
+        border-radius: 12px;
+        box-shadow: 0 0 3px #000;
+    }
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

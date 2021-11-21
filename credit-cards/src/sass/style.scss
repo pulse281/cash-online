@@ -1,0 +1,23 @@
+@import '../css/bootstrap-reboot.min.css';
+@import "../css/fonts.css";
+@import 'assets/animate';
+
+
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+@import 'blocks/variables';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/languages';
+@import 'blocks/button';
+@import 'blocks/catalog';
+@import 'blocks/text';
+@import 'blocks/footer';
+
+@import 'blocks/media';
+@import 'blocks/show-hide';
+

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+ 
+Sitemap: http://cash-online.com.ua/sitemap_index.xml

@@ -1,0 +1,9 @@
+ErrorDocument 404 /404/index.html
+
+<FilesMatch "\.php">
+SetHandler application/x-httpd-alt-php56
+</FilesMatch>
+
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|pdf|woff|svg|ttf)$">
+  Header set Cache-Control "max-age=31536000"
+</FilesMatch>
