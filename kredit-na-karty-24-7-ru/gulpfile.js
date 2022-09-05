@@ -4,7 +4,7 @@ const gulp = require("gulp");
 const webpack = require("webpack-stream");
 const browsersync = require("browser-sync");
 
-const sass = require('gulp-sass');
+const sass = require('sass');
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
@@ -102,7 +102,7 @@ gulp.task('styles', () => {
       .pipe(browsersync.stream());
 });
 
-gulp.task("build", gulp.parallel("html", "styles", "build-js"));
+gulp.task("build", gulp.parallel("html", /* "styles", */ "build-js"));
 
 gulp.task('fonts', () => {
   return gulp.src("src/fonts/**/*")
@@ -120,9 +120,9 @@ gulp.task('mailer', () => {
 });
 
 gulp.task('images', () => {
-  return gulp.src("src/img/**/*")
-      .pipe(imagemin())
-      .pipe(gulp.dest("dist/img"));
+  return gulp.src("src/assets/img/**/*")
+    .pipe(imagemin())
+    .pipe(gulp.dest("dist/assets/img"));
 });
 
 gulp.task("default", gulp.parallel("watch", "build"));
